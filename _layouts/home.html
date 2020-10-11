@@ -1,13 +1,11 @@
 ---
 layout : default
 ---
-<hr>
-<hr>
-<hr>
+
 <div class="container" style="padding-top: 10px;">
 {% for post in site.posts %}
   <div class="container">
-    <div class="card-body customCard">
+    <div class="card-body">
         <h1><a href="{{ post.url | relative_url }}"> {{ post.title }}</a></h1>
         <p><a href="{{ post.url | relative_url }}"> {{ post.date }}</a></p>
         <hr>

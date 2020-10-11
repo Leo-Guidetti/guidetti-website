@@ -9,14 +9,15 @@
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <!-- Custom styles for this template -->
-        <!--link href="assets/css/post.css" rel="stylesheet"-->    
+        <link href="{{ './assets/css/style.css' | relative_url }}" rel="stylesheet">    
     
     </head>
 
     <!--Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar customBar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="{{ './' | relative_url }}">Blog do Léo Guidetti</a>
+          <img src="{{ './assets/images/luminaria.png' | relative_url }}" class="imagem">
+          <a class="navbar-brand" href="{{ './' | relative_url }}">Blog do Guidetti</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,11 +25,7 @@
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="{{ './' | relative_url}}">Home
-                  <span class="sr-only">(current)</span>
                 </a>
-              </li>
-              <li class="nav-item">
-                <!--a class="nav-link" href="#">Contato</a-->
               </li>
             </ul>
           </div>
@@ -40,9 +37,9 @@
     </body>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-3 customBar fixed-bottom">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+      <p class="m-0 text-center text-white">Copyright &copy; guidetti-website 2020</p>
     </div>
     <!-- /.container -->
   </footer>
