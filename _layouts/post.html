@@ -1,7 +1,24 @@
 ---
 layout : default
 ---
+<hr>
+<hr>
+<hr>
+<div class="container" style="padding-top: 120x;">
 
-{{ content }}
-<p> Postado no dia {{ page.date | relative_url }} na categoria {{ page.categories | relative_url }}</p>
+    <div class="row">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h1 class="mt-4"> {{ page.title }}</h1>
+        <hr>
+        <!-- Date/Time -->
+        <p>Postado em {{ page.date }} na categoria {{ page.categories }}</p>
+        <!-- Content -->
+        <hr>
+        {{ content }}
+        <hr>
+        
 
