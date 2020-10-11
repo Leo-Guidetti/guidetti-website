@@ -1,0 +1,20 @@
+---
+layout : default
+---
+<hr>
+<hr>
+<hr>
+
+{% for post in site.posts %}
+  <div class="container">
+    <div class="card-body customCard">
+        <h1><a href="{{ post.url | relative_url }}"> {{ post.title }}</a></h1>
+        <p><a href="{{ post.url | relative_url }}"> {{ post.date }}</a></p>
+        <hr>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+    
