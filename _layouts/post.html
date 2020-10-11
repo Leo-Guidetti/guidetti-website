@@ -10,10 +10,10 @@ layout : default
 <div class="col-lg-8">
 
 <!-- Title -->
-<h1 class="mt-4"> {{ page.title }}</h1>
+<h1 class="mt-4"> {{ page.title | relative_url}}</h1>
 <hr>
 <!-- Date/Time -->
-<p>Postado em {{ page.date }} na categoria {{ page.categories }}</p>
+<p>Postado em {{ page.date | relative_url}} na categoria {{ page.categories | relative_url}}</p>
 <!-- Content -->
 <hr>
 {{ content }}
